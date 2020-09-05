@@ -119,3 +119,29 @@ deleteButton.addEventListener('click', button =>{
   calculator.updateDisplay()
 })
 /*===========================Calculator APP End===============================*/
+
+/*===========================FORM VALIDATION START============================*/
+
+function validate(){
+  var x = document.forms["form"]["phone"].value;
+  var fname = document.forms["form"]["fname"].value;
+  var email = document.forms["form"]["email"].value;
+  console.log(fname.charAt(0));
+  var valid = false;
+  var pattern = /^[0-9]+$/;
+  var mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(fname.charAt(0).match(pattern)){
+    alert('Name should not start with Number!');
+    return false;
+  }
+  else if (isNaN(x)) {
+    alert("Phone number must contain only digits!!");
+    return false;
+  }
+  else if (!(email.match(mail))) {
+      alert('Please enter valid email address');
+      return false;s
+  }
+}
+
+/*===========================FORM VALIDATION END============================*/
