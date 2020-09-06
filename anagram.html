@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Anagram Checker</title>
+    <link rel="stylesheet" href="css/anagram.css">
+</head>
+
+<body>
+    <h2>Anagram Checker</h2>
+    <div class="container">
+        <form id="anagram">
+            <label class="col-25" for="input1">Enter String:</label>
+            <input class="col-75" type="text" id="input1" name="input1" required=required>
+            <label class="col-25" for="input2">Enter word:</label>
+            <input class="col-75" type="text" id="input2" name="input2" required=required>
+
+        </form>
+    </div>
+    <div class="col-75">
+        <button class="result" onclick="anagram()">Check</button>
+        <p id="result"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
