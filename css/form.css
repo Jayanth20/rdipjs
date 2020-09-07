@@ -1,86 +1,106 @@
-h2{
-  text-align: center;
-  font-family: 'Montserrat'
+body {
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, #1CB5E0, #000046);
 }
-.container{
-  border-radius: 5px;
-  padding: 20px;
-  font-family: 'Montserrat'
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat'
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Montserrat'
 }
 
 .col-25 {
-  font-size: 16px;
-  font-weight: 700;
-  float: left;
-  width: 10%;
-  margin-top: 6px;
-  padding: 5px;
-  text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+    padding: 5px;
+    text-align: center;
 }
 
 .col-75 {
-  float: left;
-  width: 30%;
-  margin-top: 6px;
-  padding: 5px;
-  text-align: center;
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    padding: 5px;
+    text-align: center;
 }
-.col-75 label{
-  font-weight: 700;
+
+.col-75 label {
+    font-weight: 700;
 }
-#declaration{
-  text-indent: 5px;
+
+#declaration {
+    text-indent: 5px;
 }
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
+
 input[type=text] {
-  padding:5px;
-  width: 200px;
-  border-radius: 5px;
-  border: 1px solid #333;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.4);
 }
-input[type=email]{
-  padding:5px;
-  width: 200px;
-  border-radius: 5px;
-  border: 1px solid #333;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+
+input[type=email] {
+    padding: 5px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.4);
 }
-input[type=submit]{
-  border-radius: 5px;
-  padding: 10px;
-  padding-left:15px;
-  padding-right: 15px;
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.09);
-  font-family: 'Montserrat';
-  font-weight: 500;
-  cursor: pointer;
-  border: 1px solid #ddd;
-  background: #caccce;
+
+input[type=submit] {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    cursor: pointer;
+    background: #caccce;
 }
-input[type=reset]{
-  border-radius: 5px;
-  padding: 10px;
-  padding-left:15px;
-  padding-right: 15px;
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.09);
-  font-family: 'Montserrat';
-  font-weight: 500;
-  cursor: pointer;
-  border: 1px solid #ddd;
-  background: #caccce;
+
+input[type=reset] {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.09);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background: #caccce;
 }
-input[type=submit]:hover{
-  background-color: #333;
-  color: #f2f2f2;
-  transition: 0.5s;
+
+input[type=submit]:hover {
+    background-color: gray;
+    color: #000;
+    font-size: 20px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
 }
-input[type=reset]:hover{
-  background-color: #333;
-  color: #f2f2f2;
-  transition: 0.5s;
+
+input[type=reset]:hover {
+    background-color: gray;
+    color: #000;
+    font-size: 20px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
 }

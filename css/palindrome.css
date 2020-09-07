@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background: #F2994A;
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    background: linear-gradient(to right, #F2C94C, #F2994A);
 }
 
 h2 {
@@ -43,10 +46,13 @@ input[type=text] {
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
 }
 
 .submit:hover {
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #ddd;
+    color: #000;
+    font-size: 20px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.6);
     transition: 0.5s;
 }
