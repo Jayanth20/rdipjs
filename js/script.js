@@ -175,3 +175,72 @@ function anagram() {
         return false;
     }
 }
+
+/*=======================================Survival Game ============================*/
+function survive() {
+    var n1 = document.getElementById("num1").value;
+    var n2 = document.getElementById("num2").value;
+    if (n1 < 0 || n1 > 1000) {
+        alert("Please enter Number 1 between 0-1000!!")
+        return false;
+    } else if (n2 < 0 || n2 > 1000) {
+        alert("Please enter number 2 between 0-1000!!")
+        return false;
+    } else {
+        if (n1 > 100) {
+            n1 = n1 % 100;
+        }
+        if (n2 > 100) {
+            n2 = n2 % 100;
+        }
+        if (n1 > 10) {
+            n1 = n1 % 10;
+        }
+        if (n2 > 10) {
+            n2 = n2 % 10;
+        }
+        if (n1 > 2) {
+            n1 = Math.round(n1 / 10);
+        }
+        if (n2 > 2) {
+            n2 = Math.round(n2 / 10);
+        }
+    }
+
+    if (n1 == 0) {
+        if (n2 == 0) {
+            r = document.getElementById("vs").innerHTML = "Human vs Human"
+        } else if (n2 == 1) {
+            r = document.getElementById("vs").innerHTML = "Human vs Cockroach"
+        } else {
+            r = document.getElementById("vs").innerHTML = "Human vs Nuclear Bomb"
+        }
+    } else if (n1 == 1) {
+        if (n2 == 0) {
+            r = document.getElementById("vs").innerHTML = "Cockroach vs Human"
+        } else if (n2 == 1) {
+            r = document.getElementById("vs").innerHTML = "Cockroach vs Cockroach"
+        } else {
+            r = document.getElementById("vs").innerHTML = "Cockroach vs Nuclear Bomb"
+        }
+    } else if (n1 == 2) {
+        if (n2 == 0) {
+            r = document.getElementById("vs").innerHTML = "Nuclear Bomb vs Human"
+        } else if (n2 == 1) {
+            r = document.getElementById("vs").innerHTML = "Nuclear Bomb vs Cockroach"
+        } else {
+            r = document.getElementById("vs").innerHTML = "Nuclear Bomb vs Nuclear Bomb"
+        }
+    }
+
+    if (r == "Human vs Human" || r == "Cockroach vs Cockroach" || r == "Nuclear Bomb vs Nuclear Bomb") {
+        document.getElementById("won").innerHTML = "It's a TIE!";
+    } else if (r == "Human vs Cockroach" || r == "Cockroach vs Human") {
+        document.getElementById("won").innerHTML = "Human has won!";
+    } else if (r == "Human vs Nuclear Bomb" || r == "Nuclear Bomb vs Human") {
+        document.getElementById("won").innerHTML = "Nuclear Bomb has won!";
+    } else if (r == "Cockroach vs Nuclear Bomb" || r == "Nuclear Bomb vs Cockroach") {
+        document.getElementById("won").innerHTML = "Cockroach has won!";
+    }
+
+}
